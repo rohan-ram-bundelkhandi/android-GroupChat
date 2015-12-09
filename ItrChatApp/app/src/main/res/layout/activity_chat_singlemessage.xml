@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/singleMessageContainer"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/singleMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dip"
+        android:gravity="left"
+        android:foregroundGravity="left"
+        android:textSize="15dp"
+        android:text="Hello bubbles!"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" />
+
+
+
+    <RelativeLayout
+            android:id="@+id/singleMessageContainerR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/singleMessageDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="25/10/2015"
+                android:textSize="10dp"
+                android:paddingLeft="10dip"
+                android:textColor="@android:color/primary_text_light"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip" />
+
+            <TextView
+                android:id="@+id/singleMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="14:56"
+                android:layout_marginLeft="5dp"
+                android:textSize="10dp"
+                android:textColor="@android:color/primary_text_light"
+                android:layout_alignTop="@+id/singleMessageDate"
+                android:layout_toRightOf="@+id/singleMessageDate"
+                android:layout_toEndOf="@+id/singleMessageDate" />
+
+        </RelativeLayout>
+</LinearLayout>
